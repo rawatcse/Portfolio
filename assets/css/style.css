@@ -158,8 +158,8 @@ nav{
 .featured-box{
     position: relative;
     display: flex;
-    height: 100vh;
-    min-height: 700px;
+    /* height: 100vh; */
+    min-height: 500px;
 }
 
 /* ----- FEATURED TEXT BOX ----- */
@@ -208,8 +208,8 @@ nav{
 }
 .social_icons{
     display: flex;
-    margin-top: 5em;
-    gap: 30px;
+    margin-top: 1em;
+    gap: 10px;
 }
 .icon{
     display: flex;
@@ -231,19 +231,19 @@ nav{
     justify-content: right;
     align-content: center;
     min-height: 80vh;
-    width: 50%;
+    width: 42%;
 }
 .image{
     margin: auto 0;
-    width: 380px;
-    height: 380px;
+    /* width: 380px;
+    height: 380px; */
     /* border-radius: 55% 45% 55% 45%; */
-    overflow: hidden;
+    /* overflow: hidden; */
     animation: imgFloat 7s ease-in-out infinite;
 }
 .image img{
-    width: 380px;
-    height: 380px;
+    width: 420px;
+    height: 450px;
     object-fit: cover;
 }
 /* @keyframes imgFloat {
@@ -329,7 +329,7 @@ h3{
 .about-btn button{
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 5px;
     background: var(--first-color);
     color: var(--color-white);
     border-radius: 30px;
@@ -358,15 +358,23 @@ h3{
     border-radius: 5px;
 }
 
-/* ----- PROJECTS BOX ----- */
-.project-container{
+/* ----- EXPERIENCES BOX ----- */
+#experiences{
+    margin-top: 2em;
+}
+#experiences>h2{
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+.experience-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
-.project-box{
+.experience-box{
     position: relative;
     display: flex;
     justify-content: center;
@@ -379,16 +387,17 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
-.project-box>i{
+.experience-box>i{
     font-size: 50px;
     color: #00B5E7;
     margin-bottom: 25px;
 }
-.project-box label{
+.experience-box p{
     font-size: 15px;
     color: #777;
+    margin: 2em;
 }
-.project-box::after{
+.experience-box::after{
     content: "";
     position: absolute;
     bottom: -100%;
@@ -398,14 +407,18 @@ h3{
     transition: .4s;
     z-index: 1;
 }
-.project-box:hover.project-box::after{
+.experience-box:hover.experience-box::after{
     bottom: 0;
 }
-.project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label{
+.experience-box:hover.experience-box:hover{
+    cursor: pointer;
+}
+.experience-box:hover.experience-box i,
+.experience-box:hover.experience-box>h3,
+.experience-box:hover.experience-box>p{
     color: var(--color-white);
     z-index: 2;
+
 }
 
 
@@ -449,6 +462,7 @@ footer{
 @media only screen and (max-width: 1024px){
     .featured-text{
         padding: 0;
+        /* margin-top: 150px; */
     }
     .image, .image img{
         width: 320px;
@@ -489,7 +503,7 @@ footer{
     .featured-box{
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
+        /* height: 100vh; */
     }
     .featured-text{
         width: 100%;
@@ -526,10 +540,10 @@ footer{
     .about-info{
         width: 100%;
     }
-    .project-container{
+    .experience-container{
         justify-content: center;
     }
-    .project-box{
+    .experience-box{
         width: 80%;
     }
 
@@ -541,7 +555,7 @@ footer{
     .featured-name{
         font-size: 40px;
     }
-    .project-box{
+    .experience-box{
         width: 100%;
     }
     .form-inputs{

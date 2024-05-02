@@ -58,8 +58,8 @@ sr.reveal('.social_icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
 
 
-/* -- PROJECT BOX -- */
-sr.reveal('.project-box',{interval: 200})
+/* -- EXPERIENCE BOX -- */
+sr.reveal('.experience-box',{interval: 200})
 
 /* -- HEADINGS -- */
 sr.reveal('.top-header',{})
